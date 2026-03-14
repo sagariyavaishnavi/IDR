@@ -18,7 +18,7 @@
     --border-dark: rgba(255, 255, 255, 0.1);
     --border-light: rgba(0, 0, 0, 0.1);
 
-    --font-heading: 'Outfit', sans-serif;
+    --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     --container-width: 1300px;
@@ -88,8 +88,16 @@ ul {
 }
 
 span.text-gradient,
-span {
+span.text-primary {
     color: var(--primary);
+}
+
+.logo-text {
+    font-weight: 500;
+}
+
+.logo-text span {
+    font-weight: 800;
 }
 
 .section h2 span {
@@ -219,7 +227,7 @@ header.scrolled .nav-container {
 /* --- BUTTONS --- */
 .btn {
     padding: 15px 35px;
-    border-radius: 100px;
+    border-radius: 8px;
     font-weight: 700;
     font-family: var(--font-heading);
     cursor: pointer;
@@ -305,9 +313,12 @@ header.scrolled .nav-container {
 }
 
 .hero-text h1 {
-    font-size: clamp(3.2rem, 5vw, 5.5rem);
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
     margin-bottom: 25px;
     color: white;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 800;
 }
 
 .hero-text p {
@@ -984,7 +995,7 @@ header.scrolled .nav-container {
 .reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: 0.8s var(--transition);
+    transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal.active {
@@ -1028,7 +1039,29 @@ header.scrolled .nav-container {
 
 @media (max-width: 768px) {
     .section {
-        padding: 60px 0;
+        padding: 50px 0;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .logo-box img {
+        height: 32px !important;
+        width: 32px !important;
+    }
+
+    .logo-text span {
+        color: var(--primary);
+        white-space: nowrap;
     }
 
     .nav-links {
@@ -1036,7 +1069,7 @@ header.scrolled .nav-container {
         visibility: hidden;
         transform: translateY(-20px);
         position: absolute;
-        top: 85px;
+        top: 70px;
         left: 5%;
         right: 5%;
         background: var(--bg-dark);
@@ -1077,16 +1110,51 @@ header.scrolled .nav-container {
     }
 
     .hero-text h1 {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
-        line-height: 1.2;
-        overflow-wrap: break-word;
-        word-break: break-word;
+        font-size: clamp(1.8rem, 9vw, 2.8rem);
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .text-gradient {
+        display: inline-block;
+        white-space: nowrap;
     }
 
     .hero-text p {
         margin: 0 auto 32px;
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0 5%;
+        line-height: 1.5;
     }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .cyber-model {
+        width: 260px;
+        height: 260px;
+    }
+
+    .r1 { width: 240px; height: 240px; }
+    .r2 { width: 180px; height: 180px; }
+    .r3 { width: 120px; height: 120px; }
+    .cyber-core { width: 80px; height: 80px; }
+    .white-cube { width: 35px; height: 35px; }
 
     .card-grid {
         grid-template-columns: 1fr;

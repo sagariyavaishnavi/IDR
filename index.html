@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
@@ -26,7 +26,7 @@
             <nav class="nav-container">
                 <a href="#" class="logo-box">
                     <img src="assets/logo-icon.svg" alt="IDR Logo Icon" style="height: 48px; width: 48px;">
-                    <div class="logo-text">Institute of<br><span>Digital Risk</span></div>
+                    <div class="logo-text">Institute of<br><span class="text-primary">Digital Risk</span></div>
                 </a>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
@@ -54,7 +54,7 @@
             <div class="container hero-grid">
                 <div class="hero-text reveal active">
                     <span class="sub-badge">Structure • Risk • Resilience</span>
-                    <h1>Advancing the Future of <br><span class="text-gradient">Digital Risk</span></h1>
+                    <h1>Advancing <br>the Future of <br><span class="text-gradient">Digital Risk</span></h1>
                     <p>The Institute of Digital Risk (IDR) bridges the gap between academic theory and real-world
                         execution. We train, equip, and deploy elite digital risk practitioners to secure the world's
                         most regulated and high-consequence environments.</p>
@@ -338,11 +338,11 @@
                 <div class="contact-card">
                     <form>
                         <div class="form-grid">
-                            <input type="text" placeholder="Full Name" required>
-                            <input type="email" placeholder="Email Address" required>
+                            <input type="text" id="full-name" name="full_name" placeholder="Full Name" autocomplete="name" required>
+                            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="email" required>
                         </div>
-                        <input type="text" placeholder="Sector or Organization (Optional)">
-                        <textarea placeholder="How can we help you?" rows="4"></textarea>
+                        <input type="text" id="organization" name="organization" placeholder="Sector or Organization (Optional)" autocomplete="organization">
+                        <textarea id="message" name="message" placeholder="How can we help you?" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
@@ -356,7 +356,7 @@
             <div class="footer-brand">
                 <a href="#" class="logo-box">
                     <img src="assets/logo-icon.svg" alt="IDR Logo Icon" style="height: 48px; width: 48px;">
-                    <div class="logo-text">Institute of<br><span>Digital Risk</span></div>
+                    <div class="logo-text">Institute of<br><span class="text-primary">Digital Risk</span></div>
                 </a>
                 <p>Advancing the future of digital and AI risk management in regulated environments through rigorous academic insight and industry practice.</p>
                 
@@ -381,7 +381,7 @@
                 <h4>Join Our Network</h4>
                 <p>Stay updated with our latest risk models, bootcamps, and industry insights.</p>
                 <form class="subscribe-form">
-                    <input type="email" placeholder="Enter your email address" required>
+                    <input type="email" id="subscribe-email" name="subscribe_email" placeholder="Enter your email address" autocomplete="email" required>
                     <button type="submit" class="btn btn-primary">Join</button>
                 </form>
             </div>
