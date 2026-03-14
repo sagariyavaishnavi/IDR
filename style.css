@@ -472,6 +472,13 @@ header.scrolled .nav-container {
 }
 
 /* --- ABOUT --- */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: 1fr;
@@ -727,6 +734,13 @@ header.scrolled .nav-container {
 }
 
 /* --- COMMUNITY LOGO GRID --- */
+.community-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
 .check-list li {
     display: flex;
     align-items: center;
@@ -799,6 +813,37 @@ header.scrolled .nav-container {
 
 .contact-info-side {
     padding-right: 20px;
+}
+
+.contact-split .lead-text {
+    max-width: 400px;
+}
+
+.contact-features {
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+}
+
+.contact-features li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-features li svg {
+    flex-shrink: 0;
+}
+
+.contact-features li strong {
+    font-size: 1.15rem;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contact-features li p {
+    color: var(--text-muted-light);
 }
 
 .contact-card {
@@ -963,7 +1008,7 @@ header.scrolled .nav-container {
         justify-content: center;
     }
 
-    #about .container {
+    .about-container {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -982,10 +1027,16 @@ header.scrolled .nav-container {
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .nav-links {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
         position: absolute;
-        top: 100px;
+        top: 85px;
         left: 5%;
         right: 5%;
         background: var(--bg-dark);
@@ -994,10 +1045,14 @@ header.scrolled .nav-container {
         flex-direction: column;
         padding: 30px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        display: flex;
     }
 
     .nav-links.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
     .menu-toggle {
@@ -1009,14 +1064,28 @@ header.scrolled .nav-container {
         padding: 40px 30px;
         text-align: center;
         gap: 20px;
+        align-items: center;
     }
 
     .wide-box .box-title {
         flex: 0 0 auto;
     }
 
+    #hero {
+        padding-top: 120px;
+        min-height: auto;
+    }
+
     .hero-text h1 {
-        font-size: 2.8rem;
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .hero-text p {
+        margin: 0 auto 32px;
+        font-size: 1rem;
     }
 
     .card-grid {
@@ -1051,7 +1120,7 @@ header.scrolled .nav-container {
         min-width: 28px;
     }
 
-    #community .container {
+    .community-container {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -1071,7 +1140,18 @@ header.scrolled .nav-container {
     .contact-split {
         grid-template-columns: 1fr;
         gap: 40px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .contact-split .lead-text {
+        margin: 0 auto;
+    }
+
+    .contact-features li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
 
     .form-grid {
@@ -1086,6 +1166,14 @@ header.scrolled .nav-container {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
+    }
+
+    .footer-brand .logo-box {
+        justify-content: center;
+    }
+
+    .footer-brand p {
+        margin: 20px auto 0;
     }
 
     .contact-item {
