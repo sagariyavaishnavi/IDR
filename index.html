@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDR | Institute of Digital Risk</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header (Dark Glassmorphism) -->
+    <header id="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="#" class="logo-box">
+                    <img src="assets/logo-icon.svg" alt="IDR Logo Icon" style="height: 48px; width: 48px;">
+                    <div class="logo-text">Institute of<br><span>Digital Risk</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pillars">Our Pillars</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Black/Dark) -->
+        <section id="hero" class="section dark-section">
+            <!-- Animated background pattern -->
+            <div class="bg-grid"></div>
+            <div class="container hero-grid">
+                <div class="hero-text reveal active">
+                    <span class="sub-badge">Structure • Risk • Resilience</span>
+                    <h1>Advancing the Future of <br><span class="text-gradient">Digital Risk</span></h1>
+                    <p>The Institute of Digital Risk (IDR) bridges the gap between academic theory and real-world
+                        execution. We train, equip, and deploy elite digital risk practitioners to secure the world's
+                        most regulated and high-consequence environments.</p>
+                    <div class="hero-btns">
+                        <a href="#pillars" class="btn btn-primary">Explore Programs</a>
+                        <a href="#contact" class="btn btn-outline">Hire Talent</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal active">
+                    <div class="glow-bg"></div>
+                    <div class="cyber-model">
+                        <div class="cyber-ring r1">
+                            <div class="orbit-dot d1"></div>
+                        </div>
+                        <div class="cyber-ring r2">
+                            <div class="orbit-dot d2"></div>
+                        </div>
+                        <div class="cyber-ring r3">
+                            <div class="orbit-dot d3"></div>
+                        </div>
+                        <div class="cyber-core orange-diamond">
+                            <div class="white-cube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About IDR Section (White/Light) -->
+        <section id="about" class="section light-section split-layout">
+            <div class="container"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="reveal">
+                    <h2 class="section-title">Who is <span>IDR</span>?</h2>
+                    <p class="lead-text">The Institute of Digital Risk (IDR) stands at the forefront of the technology
+                        risk landscape, functioning as an elite, industry-led training and deployment institute.</p>
+                    <p class="body-text">We specially cultivate top-tier talent for critical digital, cyber, and
+                        technology risk roles tailored for heavily regulated sectors. Our approach is rooted in what the
+                        industry demands. We seamlessly integrate rigorous academic insight with hands-on, real-world
+                        project execution.</p>
+                </div>
+                <!-- Stats / Bold Graphics -->
+                <div class="about-stats reveal" style="transition-delay: 0.2s;">
+                    <div class="stat-box black-box wide-box">
+                        <div class="box-title">
+                            <h4 class="text-orange">🎓 Academic</h4>
+                            <p class="subtitle text-orange">INSIGHT & RIGOR</p>
+                        </div>
+                        <p class="desc">Curriculum designed in partnership with premier universities to ensure deep, robust theoretical foundations.</p>
+                    </div>
+                    <div class="stat-box orange-box wide-box">
+                        <div class="box-title">
+                            <h4>⚙️ Practical</h4>
+                            <p class="subtitle">INDUSTRY DEPLOYMENT</p>
+                        </div>
+                        <p class="desc">Hands-on deployment solving authentic, high-stakes security challenges within regulated sectors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Pillars Section (Dark/Black) -->
+        <section id="pillars" class="section dark-section">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <h2>Our Core <span>Pillars</span></h2>
+                    <p>Providing the framework for digital safety, practitioner development, and organizational
+                        resilience.</p>
+                </div>
+
+                <div class="card-grid">
+                    <!-- Academy -->
+                    <div class="card reveal" style="transition-delay: 0.1s;">
+                        <div class="hover-bg"></div>
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+                        <h3>Academy</h3>
+                        <p style="margin-bottom: 15px;">Transformative training and immersive bootcamps tailored for
+                            ambitious students and professionals. Accelerate your transition into specialized digital
+                            risk management roles.</p>
+                        <ul class="card-points">
+                            <li>Intensive Training Programs</li>
+                            <li>Industry Certifications</li>
+                            <li>Practitioner Bootcamps</li>
+                        </ul>
+                    </div>
+                    <!-- Innovation -->
+                    <div class="card reveal" style="transition-delay: 0.2s;">
+                        <div class="hover-bg"></div>
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18h6M10 22h4M12 2v1M12 7v1M4 12h1M19 12h1M6 6l1 1M17 6l-1 1" />
+                                <circle cx="12" cy="12" r="5" />
+                            </svg>
+                        </div>
+                        <h3>Innovation & Incubation</h3>
+                        <p style="margin-bottom: 15px;">Driving the future of risk management through pioneering research. developing proprietary IP, predictive risk models, and next-generation frameworks.</p>
+                        <ul class="card-points">
+                            <li>Proprietary Risk Models</li>
+                            <li>AI Governance Strategies</li>
+                            <li>Advanced Threat Research</li>
+                        </ul>
+                    </div>
+                    <!-- Advisory -->
+                    <div class="card reveal" style="transition-delay: 0.3s;">
+                        <div class="hover-bg"></div>
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>Advisory Services</h3>
+                        <p style="margin-bottom: 15px;">Partnering with organizations to fortify their digital posture. Providing expert guidance and hands-on deployment for essential frameworks.</p>
+                        <ul class="card-points">
+                            <li>NIST & ISO Deployments</li>
+                            <li>Compliance Auditing</li>
+                            <li>Strategic Remediation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pipeline Visually -->
+                <div class="pipeline-section reveal">
+                    <h3 class="center" style="font-size: 2.2rem; margin-bottom: 50px;">Practitioner <span
+                            class="text-orange">Lifecycle</span></h3>
+
+                    <div class="lifecycle-wrapper">
+                        <div class="lc-line"></div>
+
+                        <div class="lc-step">
+                            <div class="lc-marker"></div>
+                            <div class="lc-content">
+                                <h4>1. Train</h4>
+                                <p>Academic & Practical Foundations</p>
+                            </div>
+                        </div>
+
+                        <div class="lc-step" style="transition-delay: 0.1s;">
+                            <div class="lc-marker"></div>
+                            <div class="lc-content">
+                                <h4>2. Hire</h4>
+                                <p>Connecting Talent with Enterprise</p>
+                            </div>
+                        </div>
+
+                        <div class="lc-step" style="transition-delay: 0.2s;">
+                            <div class="lc-marker"></div>
+                            <div class="lc-content">
+                                <h4>3. Innovate</h4>
+                                <p>Developing Future Risk Models</p>
+                            </div>
+                        </div>
+
+                        <div class="lc-step" style="transition-delay: 0.3s;">
+                            <div class="lc-marker"></div>
+                            <div class="lc-content">
+                                <h4>4. Deploy</h4>
+                                <p>Strategies in High-Stakes Sectors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section (Light/Soft) -->
+        <section id="community" class="section light-section reveal">
+            <div class="container"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div>
+                    <h2 class="section-title">Who We <span>Serve</span></h2>
+                    <p class="lead-text">We empower a diverse community of ambitious minds, cultivating the next
+                        generation of risk leadership.</p>
+                    <p class="body-text">At IDR, we specifically cater to critical sectors such as financial services,
+                        vital national infrastructure, and healthcare—industries where digital and cyber risk upskilling
+                        is essential for strategic survival. Our community provides the network, knowledge, and pipeline
+                        to succeed.</p>
+                    <ul class="check-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            University Students & Graduates
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Early-Career Tech Professionals
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Financial Services Practitioners
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Critical Infrastructure Teams
+                        </li>
+                    </ul>
+                </div>
+                <!-- Partner Logos Grid -->
+                <div class="partner-grid">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <span>GovTech<br>Nexus</span>
+                    </div>
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span>FinServ<br>Analytics</span>
+                    </div>
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16 12l-4-4-4 4M12 8v8"></path>
+                        </svg>
+                        <span>Global<br>Health</span>
+                    </div>
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                        <span>Infrastructure<br>UK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section dark-section reveal">
+            <div class="bg-grid" style="opacity: 0.2;"></div>
+            <div class="container contact-split" style="position: relative; z-index: 2;">
+                <div class="contact-info-side">
+                    <h2 class="section-title">Get <span>Started</span></h2>
+                    <p class="lead-text" style="color: var(--text-muted-light); max-width: 400px;">Partner with IDR to
+                        transform your career or secure your enterprise.</p>
+
+                    <ul class="contact-features" style="margin-top: 40px; display: grid; gap: 30px;">
+                        <li style="display: flex; gap: 20px; align-items: flex-start;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"
+                                stroke-width="2" style="flex-shrink: 0;">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                            <div>
+                                <strong
+                                    style="font-size: 1.15rem; display: block; margin-bottom: 5px; color: white;">For
+                                    Professionals</strong>
+                                <p style="color: var(--text-muted-light);">Join the academy and upskill your risk
+                                    management capabilities.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 20px; align-items: flex-start;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"
+                                stroke-width="2" style="flex-shrink: 0;">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <div>
+                                <strong
+                                    style="font-size: 1.15rem; display: block; margin-bottom: 5px; color: white;">For
+                                    Organizations</strong>
+                                <p style="color: var(--text-muted-light);">Hire elite trained talent or engage our
+                                    advisory services.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-card">
+                    <form>
+                        <div class="form-grid">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <input type="text" placeholder="Sector or Organization (Optional)">
+                        <textarea placeholder="How can we help you?" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo-box">
+                    <img src="assets/logo-icon.svg" alt="IDR Logo Icon" style="height: 48px; width: 48px;">
+                    <div class="logo-text">Institute of<br><span>Digital Risk</span></div>
+                </a>
+                <p>Advancing the future of digital and AI risk management in regulated environments through rigorous academic insight and industry practice.</p>
+                
+                <div class="contact-item" style="margin-top: 30px; color: var(--primary);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span style="font-weight: 600;">London, United Kingdom</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Our Pillars</h4>
+                <ul>
+                    <li><a href="#hero">IDR Academy</a></li>
+                    <li><a href="#about">Innovation & Incubation</a></li>
+                    <li><a href="#pillars">Advisory Services</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+
+            <!-- Enhanced Join/Subscribe Section -->
+            <div class="footer-subscribe">
+                <h4>Join Our Network</h4>
+                <p>Stay updated with our latest risk models, bootcamps, and industry insights.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Institute of Digital Risk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
